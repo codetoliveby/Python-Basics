@@ -1,5 +1,4 @@
-# Python-Basics
-# Python 3
+# Python 3 basics and dictionaries operations
 # hackerrank problems
 Hackerrank python problem for finding percentage of marks from a dictionary
 There are two way solutions to this problem.
@@ -46,12 +45,11 @@ if __name__ == '__main__':
     
     
 The solution number two is:
-
 if __name__=='__main__':
-  N = int(input())
-  results = {}
-  for i in range(N):
-      a = input().split()
-      results[a[0]] = [float(x) for x in a[1:]]
-  student = input()
-  print("%.2f" %(sum(results[student])/len(results[student])))
+      N = int(input())
+      results = {}
+      for i in range(N):
+          a = input().split()
+          results[a[0]] = [float(x) for x in a[1:]]
+      student = input()
+      print("%.2f" %(sum(results[student])/len(results[student])))
